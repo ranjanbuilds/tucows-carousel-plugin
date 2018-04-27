@@ -29,7 +29,7 @@
         on:keydown="./arrowClickHandler('keyboard', %event)">
         
         <div class="slideTrack">
-            <content />ß
+            <content />
         </div>
 
         <div class="navArrows
