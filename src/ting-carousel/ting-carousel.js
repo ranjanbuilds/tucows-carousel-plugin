@@ -38,11 +38,11 @@ export const ViewModel = DefineMap.extend({
 		type: 'number',
 		value: 0
 	},
-	/**
-	* @property {number} lastSlideIndex index of last slide in the array
-	*/
 	lastSlideIndex: {
 		type: 'number',
+		/**
+    * @property {number} lastSlideIndex index of last slide in the array
+    */
 		get() {
 			if (this.slides) {
 				return this.slides.length - 1;
@@ -63,31 +63,31 @@ export const ViewModel = DefineMap.extend({
 		type: 'boolean',
 		value: false
 	},
-	/**
-	* @property {number} slideWidth returns the width of the slide (assumes all slides are equal width)
-	*/
 	slideWidth: {
 		type: 'number',
+		/**
+    * @property {number} slideWidth returns the width of the slide (assumes all slides are equal width)
+    */
 		get() {
 			if ($('.slide')) {
 				return $('.slide').outerWidth(true);
 			}
 		}
 	},
-	/**
-	* @property {boolean} isDesktop returns true if screen is desktop size (> 1024px)
-	*/
 	isDesktop: {
 		type: 'boolean',
+		/**
+      * @property {boolean} isDesktop returns true if screen is desktop size (> 1024px)
+      */
 		get() {
 			return !isMobile('isTablet');
 		}
 	},
-	/**
-	* @property {object} carouselOptions passed in from the parent component 
-	*/
 	carouselOptions: {
 		type: 'any',
+		/**
+    * @property {object} carouselOptions passed in from the parent component 
+    */
 		set(newVal) {
 			// if it's defined
 			if (newVal) {
@@ -105,11 +105,12 @@ export const ViewModel = DefineMap.extend({
 	* @property {number} autoPlayInterval current interval of setInterval function that handles the auto play of the carousel
 	*/
 	autoPlayInterval: {type: 'any'},
-	/**
-	* @property {number} autoPlay determines the setInterval duration for the auto sliding of the carousel
-	*/
+
 	autoPlay: {
 		type: 'number',
+		/**
+    * @property {number} autoPlay determines the setInterval duration for the auto sliding of the carousel
+    */
 		set(duration) {
 			// make sure duration is a number
 			if (!isNaN(duration)) {
