@@ -18,7 +18,7 @@ import DefineMap from 'can-define/map/map';
 
 import {ViewModel, SWIPE_OBJECT_DEFAULT} from './tucows-carousel-plugin';
 
-import clone from 'steal-clone';
+// import clone from 'steal-clone';
 
 // ViewModel unit tests
 describe('tucows-carousel', () => {
